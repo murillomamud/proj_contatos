@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.letnis.Contatos" versionCode="100" version="1.0.0">
+<name>CONTATOS</name>
+<description>Agenda de Contatos</description>
+<plugin name="cordova-sqlite-storage" source="npm" />
+<plugin name="cordova-plugin-file-opener2" source="npm" />
+<platform name="android" />
+<icon src="icon.png" />
+<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="icons/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+<gap:splash src="splash.png" />
+<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="splash/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+<preference name="phonegap-version" value="cli-5.4.1" />
+<plugin name="cordova-plugin-statusbar" source="npm" />
+<gap:config-file platform="ios" parent="UIStatusBarHidden"><true/></gap:config-file>
+<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance"><false/></gap:config-file>
+<preference name="StatusBarOverlaysWebView" value="false" />
+<platform name="ios">
+<preference name="SplashScreenDelay" value="1" />
+</platform>
+<platform name="android">
+<preference name="SplashScreenDelay" value="200" />
+</platform>
+<preference name="AutoHideSplashScreen" value="true" />
+<preference name="FadeSplashScreen" value="true"/>
+<preference name="SplashShowOnlyFirstTime" value="false" />
+<preference name="SplashMaintainAspectRatio" value="true" />
+<preference name="permissions" value="none"/>
+<plugin name="cordova-plugin-battery-status" source="npm" />
+<plugin name="cordova-plugin-camera" source="npm" />
+<plugin name="cordova-plugin-media-capture" source="npm" />
+<plugin name="cordova-plugin-contacts" source="npm" />
+<plugin name="cordova-plugin-device" source="npm" />
+<plugin name="cordova-plugin-file" source="npm" />
+<plugin name="cordova-plugin-splashscreen" source="npm" />
+<plugin name="cordova-plugin-file-transfer" source="npm" />
+<plugin name="cordova-plugin-geolocation" source="npm" />
+<plugin name="cordova-plugin-inappbrowser" source="npm" />
+<plugin name="cordova-plugin-media" source="npm" />
+<plugin name="cordova-plugin-network-information" source="npm" />
+<plugin name="cordova-plugin-dialogs" source="npm" />
+<plugin name="cordova-plugin-vibration" source="npm" />
+<plugin name="cordova-plugin-whitelist" source="npm" />
+<preference name="android-build-tool" value="gradle" />
+<access origin="*" subdomains="true"/>
+</widget>

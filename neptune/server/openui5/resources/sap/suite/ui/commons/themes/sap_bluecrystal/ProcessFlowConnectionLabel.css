@@ -1,0 +1,96 @@
+/* ====================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnectionLabel.control (bluecrystal theme) */
+/* ====================================================================================== */
+
+/* Configures inner element of label (e.g. for border, background, etc.) for display states (e.g. hover, active, etc.) */
+
+/* Needs to be in the theme file since font variables are only available there */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner {
+  font-size: @sapMFontMediumSize;
+}
+
+/* Disabled/ReadOnly */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled {
+  opacity: 1;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled > .sapMBtnInner {
+  background-color: @sapUiButtonStandardBG;
+  border-style: none;
+}
+
+/* Selected */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelSelected:not(:hover) > div:not(:active) {
+  background-image: none;
+  background-color: @sapUiLightestBG;
+  box-shadow: 0 0 0.313rem 0.1rem fade(@sapUiDarkShadowTint, 10%);
+  border-color: darken(@sapUiButtonStandardBG,37);
+}
+
+/* Highlighted */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelHighlighted:not(:hover):not(.sapMBtnDisabled) > div:not(:active) {
+  background-image: none;
+  background-color: @sapUiLightestBG;
+  box-shadow: 0 0 0.313rem 0.1rem fade(@sapUiDarkShadowTint, 10%);
+  border-color: darken(@sapUiButtonStandardBG,37);
+}
+
+/* Dimmed */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelDimmed:not(:hover) > div:not(:active) {
+  background-image: none;
+  background-color: darken(@sapUiButtonStandardBG,2); 
+  border-color: darken(@sapUiButtonStandardBG,17);
+}
+
+/* Configure inner text element of Label for specific state. */
+/* Also handling of active state is required to avoid problems during build process (cascading order). */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner {
+  color: @sapUiNegativeText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner {
+  color: @sapUiCriticalText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner {
+  color: @sapUiPositiveText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner {
+  color: @sapUiDarkText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiTextInverted;
+}
+
+/* Configure inner icon element of Label for specific state. */
+/* Also handling of active state is required to avoid problems during build process (cascading order) */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiNegativeText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiCriticalText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiPositiveText;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiElement;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+}

@@ -1,0 +1,28 @@
+.NeptuneListItem {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+}
+.NeptuneTop {
+    z-index: 999 !important;
+    min-width: 0px !important;
+    top: 40px !important;
+}
+.NeptunePosition {
+    position: absolute;
+}
+#AppCache_formLogon {
+    background-color: #fff;
+}
+#AppCache_formPassword {
+    background-color: #fff;
+}
+#AppCache_formPasscode {
+    background-color: #fff;
+}
+#AppCache_formCaptcha {
+    background-color: #fff;
+}
+#AppCache_listStatus .sapMSLIInfo {
+    white-space: normal !important;
+    flex: auto;
+}

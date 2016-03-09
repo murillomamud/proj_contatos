@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/data/Dataset</name>
+    <derived/>
+    <documentation>Abstract Dataset implementation</documentation>
+    <since>1.7.2</since>
+    <developmentState since="1.7.2" state="experimental">Charting API is not finished yet and might change completely</developmentState>
+    <abstract/>
+    <baseType>sap.ui.core/Element</baseType>
+</control>
